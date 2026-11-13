@@ -1,0 +1,14 @@
+{
+  "name": "Minecraft Mod Dev Environment (Java 25)",
+  "image": "mcr.microsoft.com/devcontainers/java:25-bookworm",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "es.stojanovic.gradle-language-server"
+      ]
+    }
+  },
+  "postCreateCommand": "java -version && ./gradlew --version",
+  "remoteUser": "vscode"
+}
